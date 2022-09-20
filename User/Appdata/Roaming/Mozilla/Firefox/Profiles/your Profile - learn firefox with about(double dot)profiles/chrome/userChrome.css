@@ -1,0 +1,57 @@
+/*** Hide Tab Close buttons ***/
+.tabbrowser-tab .tab-close-button {
+  visibility: collapse !important;
+}
+
+
+/*** Remove items from image context menu ***/
+#context-sendimage, /* Email Image... */
+#context-sep-setbackground, #context-setDesktopBackground, /* Set Image as Desktop Background... (and preceding separator) */
+#context-savelinktopocket, #context-pocket,
+#context-selectall,
+#context-inspect-a11y /* Inspect Accessibility Properties */ {
+  display: none !important;
+}
+
+/*** Bookmark icon change ***/
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
+
+#personal-bookmarks .bookmark-item[container][label=""] {
+ list-style-image:url('rainbow.gif')!important;
+ -moz-image-region:auto!important;
+}
+
+#personal-bookmarks .bookmark-item[container][label="$"] {
+ list-style-image:url('stocks.gif')!important;
+ -moz-image-region:auto!important;
+}
+
+#personal-bookmarks .bookmark-item[container][label="CHECK DAILY"] {
+ list-style-image:url('anchor3.gif')!important;
+ -moz-image-region:auto!important;
+}
+
+#personal-bookmarks .bookmark-item[container][label="Close!"] {
+ list-style-image:url('close2.gif')!important;
+ -moz-image-region:auto!important;
+}
+
+#personal-bookmarks .bookmark-item[container][label="Arşiv"] {
+ list-style-image:url('archive.gif')!important;
+ -moz-image-region:auto!important;
+}
+
+#personal-bookmarks .bookmark-item[container][label="Docs"] {
+ list-style-image:url('docs.gif')!important;
+ -moz-image-region:auto!important;
+}
+
+#personal-bookmarks .bookmark-item[container][label="Utils"] {
+ list-style-image:url('utils.gif')!important;
+ -moz-image-region:auto!important;
+}
+
+#personal-bookmarks .bookmark-item[container][label="logo"] {
+ list-style-image:url('logo.png')!important;
+ -moz-image-region:auto!important;
+}
